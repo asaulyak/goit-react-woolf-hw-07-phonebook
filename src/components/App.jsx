@@ -30,10 +30,11 @@ export const App = () => {
         <h1>Phonebook</h1>
         <ContactForm />
 
-        {isLoading && !error && <b>Loading...</b>}
-
         <h2>Contacts</h2>
         <Filter />
+
+        {isLoading && !error && <b>Loading...</b>}
+
         <ContactList />
       </div>
     </div>
